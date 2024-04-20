@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Papu cumpleaños</title>
+    <link rel="shortcut icon" href="iconxd.png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="fullconteiner">
+        <div class="audio"> 
+            <audio controls>
+                <source src="mananitas.mpeg" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="header textoborde">
+            <h1> ¡¡FELIZ CUMPLEAÑOS!! </h1>
+        </div>
+
+        <div>
+            <p class="conteiner2 texto"> estassonlaspapumañanitas
+                HOLAAAA FELIZ CUM-PLEAÑOS 🎉🎉🎉 
+                Espero que tengas/hayas tenido un día acá bien padre rodeada d tus seres queridos, felicidade. <br>
+                Ya un añito mas de vida, q se siente, estás conforme con como han cambiado las cosas hace un año atrás¿ <br>
+                Sé que no te pude dar un regalo físico o un detalle más chido pero quiero que sepas que lo que he hice lo programé cn mucho afecto. <br> 
+                Y sisi, ya se q igual te lo pude haber dicho así nada más, pero q chiste tendría vdd que si kkkk. <br> 
+                Hoy es tu día y solo quiero decirte lo mucho que te aprecio, no hay nadie más como tu en el fokin worl y estoy muy feliz d haberme topado contigo, <br>
+                porque tu presencia en mi vida es un regalo que valoro muchísimo más de lo q las palabras pueden expresar, q seria de mi sin ti mi amor :'v <br>
+                Entonces acá estoy deseándote q te la pases bien, y esperemos que este nuevo año de vida t traiga más de la felicidad y cariño que mereces. <br>
+                T amo muchote y felisdia <br>
+            </p>
+        </div>
+
+        <div>
+            <img src="byebye.png" alt="" width="125px" height="125px" class="byebye">
+            <img src="eljajas.png" alt="" width="116.5" height="134" class="eljajas">
+            <img src="dottorenote.png" alt="" width="139" height="146" class="dottorenote">
+            <img class="regalo" src="regalocerrado.png" alt="regalo cerrado" width="138.67" height="149.33" class="regalo">
+            <!-- <img src="https://media.discordapp.net/attachments/1144859816804745237/1231255746084339823/cat-spin.gif?ex=66364b45&is=6623d645&hm=adadb491ae1a402bfb5858643badb233b594818c93f62805358e390d8199abe5&=&width=230&height=288" alt=""> -->
+            <p class="recuadro">Pícale al regalo dos veces.</p>
+        </div>
+    </div>
+    <script>
+        var clics = 0; 
+
+        document.querySelector('.regalo').addEventListener('click', function() {
+            var regalo = document.querySelector('.regalo');
+            clics++;
+            if (clics === 1) {
+                regalo.src = 'regaloabierto23.png';
+                regalo.alt = 'regalo abierto';
+            } else if (clics === 2) {
+                regalo.src = 'https://media.discordapp.net/attachments/1144859816804745237/1231255746084339823/cat-spin.gif?ex=66364b45&is=6623d645&hm=adadb491ae1a402bfb5858643badb233b594818c93f62805358e390d8199abe5&=&width=230&height=288';
+                regalo.alt = 'GIF';
+            } else if (clics === 3) {
+                regalo.src = 'https://media.discordapp.net/attachments/1144859816804745237/1231255746084339823/cat-spin.gif?ex=66364b45&is=6623d645&hm=adadb491ae1a402bfb5858643badb233b594818c93f62805358e390d8199abe5&=&width=230&height=288';
+                regalo.alt = 'GIF';
+            }
+        });
+    </script>
+</body>
+</html>
